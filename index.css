@@ -1,0 +1,33 @@
+body{
+    text-align: center;
+    background-color: #8BBCBC;
+}
+
+h1 {
+  max-height: 40px;
+  font-size: 100px;
+}
+
+#circle1 {
+    height: 250px;
+    width: 250px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+#circle2 {
+    height: 250px;
+    width: 250px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+#circle3 {
+    height: 250px;
+    width: 250px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+  }
