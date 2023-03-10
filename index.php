@@ -9,8 +9,14 @@
 </head>
 <body>
     <h1>Welkom</h1>
+
+    <!--greyCircle-->
     <div id="circle1">Profiel aanmaken</div>
+
+    <!--redCircle-->
     <div id="circle2">Profiel bekijken</div><br>
+
+    <!--blueCircle-->
     <div id="circle3">home</div>
 </body>
 </html>
