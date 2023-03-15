@@ -16,6 +16,12 @@ h1 {
     display: inline-block;
   }
 
+#makePr {
+  position:absolute;
+  left: 38%;
+  top:  38%;
+}
+
 #circle2 {
     height: 250px;
     width: 250px;
@@ -24,10 +30,25 @@ h1 {
     display: inline-block;
   }
 
+#viewPr {
+  position:absolute;
+  left: 55%;
+  top:  38%;
+}
+
 #circle3 {
     height: 250px;
     width: 250px;
     background-color: blue;
     border-radius: 50%;
-    display: inline-block;
+    position: absolute;
+    top: 53%;
+    left: 42%;
   }
+
+#home {
+  position: absolute;
+  top: 19%;
+  left: 23%;
+  font-size: 100px;
+}
