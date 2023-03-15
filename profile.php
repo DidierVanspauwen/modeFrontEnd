@@ -12,51 +12,46 @@
     <!--Home button-->
     <div id="homeButton"><a href=.php >&#127968 </a></div>
 
+    <!--'Plus' button-->
+    <div id="plusButton"><a href=.php >&#10133 </a></div>
+
     <!--greyCircle-->
-    <div id="greyCircle">
-        <br><br><br><br><br><br><br><br><br<br><br><br><br><br><br><br>
-        Foto toevoegen
-    </div>
+    <div id="greyCircle"></div>
     
-    <!--username inputfield-->
+    <!--username field-->
     <div id="usernameInputField">
     <label for="username">Gebruikersnaam:</label><br>
-    <input type="text" id="username" name="username">
+    <input type="text" id="username" name="username" value="" readonly>
     </div>
 
-    <!--first name inputfield-->
+    <!--first name field-->
     <div id="firstNameInputField">
     <label for="firstName">Voornaam:</label><br>
-    <input type="text" id="firstName" name="firstName">
+    <input type="text" id="firstName" name="firstName" value="" readonly>
     </div>
 
-    <!--length inputfield-->
+    <!--length field-->
     <div id="lengthInputField">
     <label for="length">Lengte in cm:</label><br>
-    <input type="text" id="length" name="length">
+    <input type="text" id="length" name="length" value="" readonly>
     </div>
 
-    <!--age inputfield-->
+    <!--age field-->
     <div id="ageInputField">
     <label for="age">Leeftijd:</label><br>
-    <input type="text" id="age" name="age">
+    <input type="text" id="age" name="age" value="" readonly>
     </div>
 
-    <!--shoe size inputfield-->
+    <!--shoe size field-->
     <div id="shoeSizeInputField">
     <label for="shoeSize">Schoenmaat:</label><br>
-    <input type="text" id="shoeSize" name="shoeSize">
+    <input type="text" id="shoeSize" name="shoeSize" value="" readonly>
     </div>
 
-    <!--fashion description inputfield-->
+    <!--fashion description field-->
     <div id="fashionDescriptionInputField">
     <label for="fashionDes">Fashion omschrijving:</label><br>
-    <input type="text" id="fashionDes" name="fashionDes">
-    </div>
-
-    <!--'save' button-->
-    <div id="saveButton">
-    <button type="button" onclick="alert('Je profiel is aangemaakt. Welkom!')">Opslaan</button>
+    <input type="text" id="fashionDes" name="fashionDes" value="" readonly>
     </div>
 
 </body>
