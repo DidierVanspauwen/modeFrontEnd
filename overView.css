@@ -3,14 +3,22 @@ body{
     background-color: #8BBCBC;
 }
 
-#homeButton {
-    background-color: #6a9292;
-    border-radius: 50%;
+#profilePicture {
     position: absolute;
-    top: 3%;
-    left: 2%;
-    font-size: 50px;
-  }
+    top: 10%;
+    left: 10%;
+    height: 200px;
+    width: 250px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#userName{
+    position: absolute;
+    left: 20%;
+    top: 30%;
+}
 
 #greyCircle {
     position: absolute;
@@ -23,7 +31,6 @@ body{
     display: inline-block;
   }
 
-
 /*Fashion description input field*/
 #fashionDescriptionInputField {
     position: absolute;
@@ -35,19 +42,4 @@ body{
 #fashionDes {
     background-color: #bbb;
     padding: 50px 100px;
-}
-
-/*Save button*/
-Button{
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-    display: inline-block;
-    background-color: black;
-    padding: 20px;
-    width: 200px;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    border: none;
 }

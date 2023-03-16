@@ -10,7 +10,7 @@
 <body>
     
     <!--Home button-->
-    <div id="homeButton"><a href=.php >&#127968 </a></div>
+    <div id="homeButton"><a href=overView.php >&#127968 </a></div>
 
     <!--greyCircle-->
     <div id="greyCircle">
@@ -20,6 +20,7 @@
     
     <!--username inputfield-->
     <div id="usernameInputField">
+    <br><br><br>
     <label for="username">Gebruikersnaam:</label><br>
     <input type="text" id="username" name="username">
     </div>
@@ -54,6 +55,7 @@
     <input type="text" id="fashionDes" name="fashionDes">
     </div>
 
+    
     <!--'save' button-->
     <div id="saveButton">
     <button type="button" onclick="alert('Je profiel is aangemaakt. Welkom!')">Opslaan</button>

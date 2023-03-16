@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="newProfile.css">
+    <link rel="stylesheet" href="newPost.css">
 </head>
 <body>
     
     <!--Home button-->
-    <div id="homeButton"><a href=index.php >&#127968 </a></div>
+    <div id="homeButton"><a href=overView.php >&#127968 </a></div>
 
     <!--greyCircle-->
     <div id="greyCircle">
@@ -26,7 +26,7 @@
 
     <!--'save' button-->
     <div id="saveButton">
-    <button type="button" onclick="alert('Je profiel is aangemaakt. Welkom!')">Opslaan</button>
+    <button type="button" onclick="alert('Je post is aangemaakt. Welkom!')">Opslaan</button>
     </div>
 
 </body>

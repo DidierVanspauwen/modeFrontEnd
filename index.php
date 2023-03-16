@@ -19,7 +19,7 @@
 
     <!--redCircle-->
     <div id="circle2">
-        <div id="viewPr"><a href=viewProfile.php >Profiel bekijken</div>
+        <div id="viewPr"><a href=Profile.php >Profiel bekijken</div>
     </div><br>
 
     <!--blueCircle-->

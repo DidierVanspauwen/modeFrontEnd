@@ -4,6 +4,8 @@ body{
 }
 
 #homeButton {
+    background-color: #6a9292;
+    border-radius: 50%;
     position: absolute;
     top: 3%;
     left: 2%;
@@ -37,7 +39,7 @@ body{
 #firstNameInputField {
     position: absolute;
     top: 15%;
-    left: 40%;
+    left: 43%;
     text-align: left;
 }
 
@@ -49,7 +51,7 @@ body{
 #lengthInputField {
     position: absolute;
     top: 23%;
-    left: 40%;
+    left: 43%;
     text-align: left;
 }
 
@@ -61,7 +63,7 @@ body{
 #ageInputField {
     position: absolute;
     top: 15%;
-    left: 50%;
+    left: 55%;
     text-align: left;
 }
 
@@ -73,7 +75,7 @@ body{
 #shoeSizeInputField {
     position: absolute;
     top: 23%;
-    left: 50%;
+    left: 55%;
     text-align: left;
 }
 
@@ -85,7 +87,7 @@ body{
 #fashionDescriptionInputField {
     position: absolute;
     top: 35%;
-    left: 40%;
+    left: 43%;
     text-align: left;
 }
 
@@ -97,8 +99,8 @@ body{
 /*Save button*/
 Button{
     position: absolute;
-    bottom: 175px;
-    right: 300px;
+    bottom:  5%;
+    right: 5%;
     display: inline-block;
     background-color: black;
     padding: 20px;
