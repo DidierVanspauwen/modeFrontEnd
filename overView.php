@@ -9,7 +9,16 @@
 </head>
 <body>
     
-    <div class="post">
+    <!--Home button-->
+    <div id="homeButton"><a href=overView.php >&#127968 </a></div>
+
+    <!--'Plus' button-->
+    <div id="plusButton"><a href=newPost.php >&#10133 </a></div>
+
+    <!-- Setting button -->
+    <div id="settingButton"><a href=newProfile.php >&#128295 </a></div>
+
+
         <div id="profilePicture"></div>
         <div id="userName">Naam</div>
         <div id="greyCircle"></div>
@@ -20,6 +29,5 @@
         <input type="text" id="fashionDes" name="fashionDes" value="" readonly>
         </div>
 
-    </div>
 </body>
 </html>

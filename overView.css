@@ -3,10 +3,37 @@ body{
     background-color: #8BBCBC;
 }
 
+#homeButton {
+    background-color: #6a9292;
+    border-radius: 50%;
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    font-size: 50px;
+  }
+
+#plusButton {
+    background-color: #6a9292;
+    border-radius: 50%;
+    position: absolute;
+    top: 13%;
+    left: 2%;
+    font-size: 50px;
+  }
+
+#settingButton {
+    background-color: #6a9292;
+    border-radius: 50%;
+    position: absolute;
+    top: 23%;
+    left: 2%;
+    font-size: 50px;
+}
+
 #profilePicture {
     position: absolute;
     top: 10%;
-    left: 10%;
+    left: 25%;
     height: 200px;
     width: 250px;
     background-color: #bbb;
@@ -16,14 +43,14 @@ body{
 
 #userName{
     position: absolute;
-    left: 20%;
-    top: 30%;
+    left: 32%;
+    top: 38%;
 }
 
 #greyCircle {
     position: absolute;
     top: 10%;
-    left: 40%;
+    left: 50%;
     height: 250px;
     width: 300px;
     background-color: #bbb;
@@ -35,7 +62,7 @@ body{
 #fashionDescriptionInputField {
     position: absolute;
     top: 50%;
-    left: 37%;
+    left: 47%;
     text-align: left;
 }
 
