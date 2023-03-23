@@ -1,6 +1,11 @@
 body{
     text-align: center;
     background-color: #8BBCBC;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
 }
 
 #homeButton {

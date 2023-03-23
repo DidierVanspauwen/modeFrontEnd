@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="Profile.css">
 </head>
 <body>
-    
+
     <!--Home button-->
     <div id="homeButton"><a href=overView.php >&#127968 </a></div>
 
@@ -20,6 +20,8 @@
 
     <!--greyCircle-->
     <div id="greyCircle"></div>
+
+    <button onclick="loadProfile(1)">Laad profiel 1</button><button onclick="loadProfile(2)">Laad profiel 2</button>
     
     <!--username field-->
     <div id="usernameInputField">
@@ -57,5 +59,26 @@
     <input type="text" id="fashionDes" name="fashionDes" value="" readonly>
     </div>
 
+
+    <script>
+        
+        function loadProfile(id) {
+            fetch('../modeBackEnd/users.php?id=' + id)
+            .then((response) => response.json())
+            .then((result) => {
+
+                console.log(result[0].username);
+
+                document.getElementById('username').value = result[0].username;
+                document.getElementById('firstName').value = result[0].name;
+                document.getElementById('age').value = result[0].age;
+                document.getElementById('shoeSize').value = result[0].shoeSize;
+                document.getElementById('length').value = result[0].height;
+                document.getElementById('fashionDes').value = result[0].fashionDescription;
+                
+            });
+        }
+
+    </script>
 </body>
 </html>

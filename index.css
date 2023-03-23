@@ -1,7 +1,14 @@
 body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     background-color: #8BBCBC;
 }
+
+a {
+  text-decoration: none;
+  color: black
+}
+
 
 h1 {
   max-height: 40px;
