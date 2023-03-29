@@ -19,13 +19,12 @@
 
     <!--redCircle-->
     <div id="circle2">
-        <div id="viewPr"><a href=Profile.php >Profiel bekijken</div>
+        <div id="viewPr"><a href=profile.php >Profiel bekijken</div>
     </div><br>
 
     <!--blueCircle-->
     <div id="circle3">
         <div id="home"><a href=overView.php >&#127968</div>
     </div>
-
 </body>
 </html>

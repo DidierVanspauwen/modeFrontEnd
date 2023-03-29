@@ -5,24 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="newProfile.css">
 </head>
 <body>
-    
-    <!--Home button-->
-    <div id="homeButton"><a href=index.php >&#127968 </a></div>
+<form id="form" action="#" method="post">
 
-    <!--greyCircle-->
-    <div id="greyCircle">
-        <br><br><br><br><br><br><br><br><br<br><br><br><br><br><br><br>
-        Foto toevoegen
-    </div>
-    
     <!--username inputfield-->
     <div id="usernameInputField">
     <br><br><br>
     <label for="username">Gebruikersnaam:</label><br>
-    <input type="text" id="username" name="username">
+    <input type="text" id="username" name="username" required>
     </div>
 
     <!--first name inputfield-->
@@ -55,11 +46,22 @@
     <input type="text" id="fashionDes" name="fashionDes">
     </div>
 
-    
-    <!--'save' button-->
-    <div id="saveButton">
-    <button type="button" onclick="alert('Je profiel is aangemaakt. Welkom!')">Opslaan</button>
-    </div>
 
+    <input type="submit" value="Submit">
+    </form>
+
+    <!-- javascript ajax library  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+        let form = document.getElementsByTagName('form')[0];
+        form.addEventListener('submit', (e) => {
+
+            e.preventDefault();
+
+            $.post('../modeBackEnd/test.php', $('form').serialize())
+
+        });
+    </script>
 </body>
 </html>

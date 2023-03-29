@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="newProfile.css">
+    <link rel="stylesheet" href="profileChange.css">
 </head>
 <body>
     
-    <!--Home button-->
+    <!-- Home button -->
     <div id="homeButton"><a href=index.php >&#127968 </a></div>
 
     <!--greyCircle-->
@@ -18,6 +18,8 @@
         Foto toevoegen
     </div>
     
+    <button onclick="loadProfile(1)">Laad profiel 1</button><button onclick="loadProfile(2)">Laad profiel 2</button>
+
     <!--username inputfield-->
     <div id="usernameInputField">
     <br><br><br>
@@ -58,8 +60,28 @@
     
     <!--'save' button-->
     <div id="saveButton">
-    <button type="button" onclick="alert('Je profiel is aangemaakt. Welkom!')">Opslaan</button>
+    <button type="button" onclick="alert('Je wijzigingen zijn opgeslagen.')">Opslaan</button>
     </div>
 
+    <script>
+        
+        function loadProfile(id) {
+            fetch('../modeBackEnd/users.php?id=' + id)
+            .then((response) => response.json())
+            .then((result) => {
+
+                console.log(result[0].username);
+
+                document.getElementById('username').value = result[0].username;
+                document.getElementById('firstName').value = result[0].name;
+                document.getElementById('age').value = result[0].age;
+                document.getElementById('shoeSize').value = result[0].shoeSize;
+                document.getElementById('length').value = result[0].height;
+                document.getElementById('fashionDes').value = result[0].fashionDescription;
+                
+            });
+        }
+
+    </script>
 </body>
 </html>

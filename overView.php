@@ -10,7 +10,7 @@
 <body>
     
     <!--Home button-->
-    <div id="homeButton"><a href=overView.php >&#127968 </a></div>
+    <div id="homeButton"><a href=index.php >&#127968 </a></div>
 
     <!--'Plus' button-->
     <div id="plusButton"><a href=newPost.php >&#10133 </a></div>

@@ -10,13 +10,13 @@
 <body>
 
     <!--Home button-->
-    <div id="homeButton"><a href=overView.php >&#127968 </a></div>
+    <div id="homeButton"><a href=index.php >&#127968 </a></div>
 
     <!--'Plus' button-->
     <div id="plusButton"><a href=newPost.php >&#10133 </a></div>
 
     <!-- Setting button -->
-    <div id="settingButton"><a href=newProfile.php >&#128295 </a></div>
+    <div id="settingButton"><a href=profileChange.php >&#128295 </a></div>
 
     <!--greyCircle-->
     <div id="greyCircle"></div>
