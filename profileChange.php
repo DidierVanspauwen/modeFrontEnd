@@ -20,6 +20,8 @@
     
     <button onclick="loadProfile(1)">Laad profiel 1</button><button onclick="loadProfile(2)">Laad profiel 2</button>
 
+    <form> 
+
     <!--username inputfield-->
     <div id="usernameInputField">
     <br><br><br>
@@ -60,8 +62,9 @@
     
     <!--'save' button-->
     <div id="saveButton">
-    <button type="button" onclick="alert('Je wijzigingen zijn opgeslagen.')">Opslaan</button>
+    <button type="submit" onclick="alert('Je wijzigingen zijn opgeslagen.')">Opslaan</button>
     </div>
+    </form>
 
     <script>
         
@@ -82,6 +85,18 @@
             });
         }
 
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+        let form = document.getElementsByTagName('form')[0];
+        form.addEventListener('submit', (e) => {
+
+            e.preventDefault();
+
+            $.post('../modeBackEnd/profileChange.php', $('form').serialize())
+
+        });
     </script>
 </body>
 </html>
