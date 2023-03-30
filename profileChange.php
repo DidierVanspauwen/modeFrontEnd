@@ -18,7 +18,12 @@
         Foto toevoegen
     </div>
     
-    <button onclick="loadProfile(1)">Laad profiel 1</button><button onclick="loadProfile(2)">Laad profiel 2</button>
+    <input type="text" placeholder="zoek username" id="usernameField">
+    <button onclick="loadProfile()">Zoek username</button>
+
+    <form> 
+
+    <div id="profile_id"></div>
 
     <!--username inputfield-->
     <div id="usernameInputField">
@@ -53,6 +58,7 @@
 
     <!--fashion description inputfield-->
     <div id="fashionDescriptionInputField">
+        <div id="fashionDescriptionText"></div>
     <label for="fashionDes">Fashion omschrijving:</label><br>
     <input type="text" id="fashionDes" name="fashionDes">
     </div>
@@ -60,13 +66,17 @@
     
     <!--'save' button-->
     <div id="saveButton">
-    <button type="button" onclick="alert('Je wijzigingen zijn opgeslagen.')">Opslaan</button>
+    <button type="submit" onclick="alert('Je wijzigingen zijn opgeslagen.')">Opslaan</button>
     </div>
+    </form>
 
     <script>
         
-        function loadProfile(id) {
-            fetch('../modeBackEnd/users.php?id=' + id)
+        function loadProfile() {
+
+            let username = document.getElementById('usernameField').value;
+
+            fetch('../modeBackEnd/users.php?username=' + username)
             .then((response) => response.json())
             .then((result) => {
 
@@ -78,10 +88,27 @@
                 document.getElementById('shoeSize').value = result[0].shoeSize;
                 document.getElementById('length').value = result[0].height;
                 document.getElementById('fashionDes').value = result[0].fashionDescription;
-                
-            });
+                document.getElementById('fashionDescriptionText').innerText = result[0].fashionDescription;
+                document.getElementById('profile_id').innerHTML = result[0].id;
+            
+            })
+            .catch(e => {
+                alert('niet gevonden');
+            })
         }
 
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+        let form = document.getElementsByTagName('form')[0];
+        form.addEventListener('submit', (e) => {
+
+            e.preventDefault();
+
+            $.post('../modeBackEnd/profileChange.php?id=' + document.getElementById('profile_id').innerHTML, $('form').serialize())
+
+        });
     </script>
 </body>
 </html>

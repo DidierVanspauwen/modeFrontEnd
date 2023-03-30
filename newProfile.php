@@ -17,7 +17,9 @@
         <br><br><br><br><br><br><br><br><br<br><br><br><br><br><br><br>
         Foto toevoegen
     </div>
-    
+
+    <form>
+
     <!--username inputfield-->
     <div id="usernameInputField">
     <br><br><br>
@@ -58,8 +60,24 @@
     
     <!--'save' button-->
     <div id="saveButton">
-    <button type="button" onclick="alert('Je profiel is aangemaakt. Welkom!')">Opslaan</button>
+    <button type="submit" onclick="alert('Je profiel is aangemaakt. Welkom!')">Opslaan</button>
     </div>
+    <!-- <input type="submit" value="Submit"> -->
+
+    </form>
+    <!-- javascript ajax library  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+        let form = document.getElementsByTagName('form')[0];
+        form.addEventListener('submit', (e) => {
+
+            e.preventDefault();
+
+            $.post('../modeBackEnd/newProfile.php', $('form').serialize())
+
+        });
+    </script>
 
 </body>
 </html>
