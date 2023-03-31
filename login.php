@@ -1,6 +1,6 @@
   
-
-  
+<link rel="stylesheet" href="login.css">
+<?php
     $_SESSION['isIngelogd'] = true;
     $thisPage = $_SERVER['PHP_SELF'];
 ?>
@@ -34,4 +34,5 @@
     <button type="button" class="cancelbtn">Cancel</button>
   </div>
 </form>
+
     
