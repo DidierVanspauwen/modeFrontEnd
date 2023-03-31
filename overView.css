@@ -46,10 +46,26 @@ a{
     display: inline-block;
 }
 
-#userName{
+#userNameField{
     position: absolute;
     left: 32%;
     top: 38%;
+}
+
+#username {
+    background-color: #bbb;
+    padding: 50px 100px;
+}
+
+#userNameInputField{
+    position: relative;
+    left: 32%;
+    top: 38%;
+}
+
+#username {
+    background-color: #bbb;
+    padding: 50px 100px;
 }
 
 #greyCircle {
